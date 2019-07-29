@@ -78,7 +78,7 @@ export default () => {
 
   return html`
     <main className="app">
-    ${!dialog&&html`
+      ${!dialog&&html`
         <${Tests}
           before=${before}
           setBefore=${setBefore}
@@ -89,7 +89,7 @@ export default () => {
         />
         <${Results} tests=${tests} />
       `}
-      ${!dialog &&
+      ${dialog &&
         html`
           <dialog open>
             <h1><i>Perflink</i></h1>
