@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Perflink | JS Benchmarks</title>
+    <meta
+      name="description"
+      content="JavaScript performance benchmarks that you can share via URL."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-125574008-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'UA-125574008-2')
+    </script>
+    <script>
+      ;(function() {
+        var redirect = sessionStorage.redirect
+        delete sessionStorage.redirect
+        if (redirect && redirect != location.href)
+          history.replaceState(null, null, redirect)
+      })()
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/library/prism.css" />
+    <link rel="stylesheet" href="/routes/home/index.css" />
+    <script defer src="/library/prism.js"></script>
+    <script type="module">
+      import {app} from '/index.js';
+      import {React, ReactDOM} from  '/web_modules/es-react-production/index.js';
+      app({React, ReactDOM});
+    </script>
+  </head>
+  <body></body>
+</html>
